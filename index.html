@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pyramid of Echoes</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <main id="game-container">
+
+        <h1 id="title">
+            PYRAMID EXPLORER
+        </h1>
+
+        <section id="scene-container">
+
+            <p id="scene-text" aria-live="polite">
+                Press SPACE to begin.
+            </p>
+
+        </section>
+
+        <section id="choices">
+
+            <div class="choice" id="left-choice">
+                [A] Left Path
+            </div>
+
+            <div class="choice" id="right-choice">
+                [D] Right Path
+            </div>
+
+        </section>
+
+        <div id="controls">
+
+            SPACE = Start |
+            R = Replay Audio
+
+        </div>
+
+    </main>
+
+    <!-- Narration -->
+    <audio id="voice-audio"></audio>
+
+    <!-- Ambient loop -->
+    <audio
+        id="ambient-audio"
+        src="sounds/mavopix-ambient-cave-sound.mp3"
+        loop>
+    </audio>
+
+    <!-- Sound effects -->
+    <audio
+        id="select-sound"
+        src="sounds/soundshelfstudio-select-sound.mp3">
+    </audio>
+
+    <audio
+        id="confirm-sound"
+        src="sounds/soundshelfstudio-confirm-sound.mp3">
+    </audio>
+
+	<script src = "js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
